@@ -17,5 +17,3 @@ The team behind the creation:
 Belinda CHerono | [@Bereichh] (https://github.com/Bereichh/Bereichh)
 Ann Chereen Nyambura Karanja | [@Nyambu-byte] (https://github.com/Nyambu-byte)
 Thulisile Hlophe | [@Thuli-H] (https://github.com/Thuli-H)
-
-
