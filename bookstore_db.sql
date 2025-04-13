@@ -268,19 +268,19 @@ INSERT INTO order_line (order_line_id, order_id, book_id, quantity, unit_price) 
 
 -- creating new users with different priviledges in the database
 
-CREATE USER'Thulisile'@'localhost'
-IDENTIFIED BY'98765'
+CREATE USER'Thulisile'@'%'
+IDENTIFIED BY'98765';
 
 --Grant her access to create, alter and drop tables in the database
 
 GRANT CREATE, ALTER, DROP
-ON bookstore_db.* TO 'Thulisile'@'localhost';
+ON bookstore_db.* TO 'Thulisile'@'%';
 
 --Another user with different priviledges
 
-CREATE USER'Cherono'@'localhost'
-IDENTIFIED BY'12345'
+CREATE USER'Cherono'@'%'
+IDENTIFIED BY'12345';
 
 --Grant her access to select, insert and update data in the database
 GRANT SELECT, INSERT, UPDATE 
-ON bookstore_db.* TO 'Cherono'@'localhost';
+ON bookstore_db.* TO 'Cherono'@'%';
