@@ -262,3 +262,22 @@ INSERT INTO order_line (order_line_id, order_id, book_id, quantity, unit_price) 
 (2, 1, 102, 1, 25.50), 
 (3, 2, 103, 3, 12.75), 
 (4, 3, 104, 1, 19.99); 
+
+-- creating new users with different priviledges in the database
+
+CREATE USER'Thulisile'@'localhost'
+IDENTIFIED BY'98765'
+
+--Grant her access to create, alter and drop tables in the database
+
+GRANT CREATE, ALTER, DROP
+ON bookstore_db.* TO 'Thulisile'@'localhost';
+
+--Another user with different priviledges
+
+CREATE USER'Cherono'@'localhost'
+IDENTIFIED BY'12345'
+
+--Grant her access to select, insert and update data in the database
+GRANT SELECT, INSERT, UPDATE 
+ON bookstore_db.* TO 'Cherono'@'localhost';
